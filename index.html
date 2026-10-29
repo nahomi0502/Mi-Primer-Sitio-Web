@@ -1,0 +1,546 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: Maldonado Sanchez Aivlis Luciana Nahomi
+  * Grupo: 3B PRO VESP  
+  * Actividad: Portal Institucional (Con barra superior, collage y formulario)
+  ====================================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102d3a">
+    <meta name="description" content="Descubre Hotel Brisa Dorada, un espacio de descanso, comodidad y elegancia.">
+    <title>Hotel Brisa Dorada | Descansa diferente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <div class="container top-content">
+            <span>✦ Tu descanso comienza aquí</span>
+            <div>
+                <a href="tel:7771234567">☎ 777 123 4567</a>
+                <span> | Atención personalizada</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="brand" href="#inicio">
+                <span class="brand-icon">✦</span>
+                <span>BRISA <strong>DORADA</strong>
+                    <small>HOTEL & EXPERIENCIAS</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#personal">Nuestro equipo</a>
+                <a href="#reservaciones" class="nav-cta">Reservar ahora ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="eyebrow">BIENVENIDO A TU LUGAR FAVORITO</span>
+                <h1>Un refugio de calma.<br>
+                    <span>Una experiencia inolvidable.</span>
+                </h1>
+                <p>
+                    Descubre el equilibrio perfecto entre elegancia,
+                    comodidad y momentos que merecen ser recordados.
+                </p>
+                <div class="hero-actions">
+                    <a href="#reservaciones" class="btn btn-gold">
+                        Planear mi estancia ↗
+                    </a>
+                    <a href="#habitaciones" class="btn btn-outline">
+                        Explorar habitaciones
+                    </a>
+                </div>
+                <div class="hero-note">
+                    ✦ Hospitalidad · Descanso · Experiencias
+                </div>
+            </div>
+            <a href="#habitaciones" class="scroll-cue">DESCUBRE MÁS ↓</a>
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section class="welcome section-padding">
+            <div class="container welcome-grid">
+                <div class="welcome-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85"
+                        alt="Instalaciones de un hotel rodeado de jardines">
+                    <div class="image-label">
+                        <span>UN LUGAR PARA DESCONECTAR</span>
+                        <strong>Tu momento, tu espacio.</strong>
+                    </div>
+                </div>
+                <div class="welcome-text">
+                    <span class="eyebrow dark-eyebrow">SOBRE NOSOTROS</span>
+                    <h2>La diferencia está en <em>cada detalle.</em></h2>
+                    <p>
+                        En Hotel Brisa Dorada creemos que descansar es
+                        mucho más que dormir. Es disfrutar de espacios
+                        acogedores, recibir una atención cálida y crear
+                        recuerdos especiales.
+                    </p>
+                    <p>
+                        Ya sea una escapada en pareja, unas vacaciones
+                        familiares o un viaje de trabajo, queremos que
+                        cada momento de tu estancia sea especial.
+                    </p>
+                    <a href="#servicios" class="text-link">
+                        Conoce nuestras experiencias →
+                    </a>
+                    <div class="welcome-stats">
+                        <div><strong>4</strong><span>Tipos de habitación</span></div>
+                        <div><strong>∞</strong><span>Momentos por disfrutar</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABITACIONES -->
+        <section class="rooms section-padding" id="habitaciones">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow dark-eyebrow">TU DESCANSO IDEAL</span>
+                    <h2>Encuentra tu <em>espacio perfecto</em></h2>
+                    <p>Elige la habitación que mejor se adapte a tu viaje.</p>
+                </div>
+
+                <div class="rooms-grid">
+                    <article class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=85"
+                                 alt="Habitación estándar">
+                            <span class="room-tag">ESENCIAL</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-meta">1–2 HUÉSPEDES · CAMA CÓMODA</div>
+                            <h3>Habitación Estándar</h3>
+                            <p>Un ambiente acogedor para relajarte después de un gran día.</p>
+                            <ul>
+                                <li>✓ Baño privado</li>
+                                <li>✓ Aire acondicionado</li>
+                                <li>✓ Televisión y Wi-Fi</li>
+                            </ul>
+                            <div class="room-bottom">
+                                <div><small>Desde</small><strong>$900 <small>MXN/noche</small></strong></div>
+                                <a href="#reservaciones" class="room-link"
+                                   data-room="estandar">Elegir ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=85"
+                                 alt="Habitación doble con camas confortables">
+                            <span class="room-tag">FAVORITA</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-meta">2–3 HUÉSPEDES · DOS CAMAS</div>
+                            <h3>Habitación Doble</h3>
+                            <p>Más espacio para compartir tu estancia con alguien especial.</p>
+                            <ul>
+                                <li>✓ Dos camas</li>
+                                <li>✓ Baño privado</li>
+                                <li>✓ Aire acondicionado</li>
+                            </ul>
+                            <div class="room-bottom">
+                                <div><small>Desde</small><strong>$1,200 <small>MXN/noche</small></strong></div>
+                                <a href="#reservaciones" class="room-link"
+                                   data-room="doble">Elegir ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=85"
+                                 alt="Suite elegante con zona de descanso">
+                            <span class="room-tag">EXCLUSIVA</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-meta">2 HUÉSPEDES · MAYOR CONFORT</div>
+                            <h3>Suite de Lujo</h3>
+                            <p>Una estancia distinguida con detalles para consentirte.</p>
+                            <ul>
+                                <li>✓ Cama matrimonial</li>
+                                <li>✓ Sala de descanso</li>
+                                <li>✓ Decoración elegante</li>
+                            </ul>
+                            <div class="room-bottom">
+                                <div><small>Desde</small><strong>$2,000 <small>MXN/noche</small></strong></div>
+                                <a href="#reservaciones" class="room-link"
+                                   data-room="suite">Elegir ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=700&q=85"
+                                 alt="Habitación amplia para una familia">
+                            <span class="room-tag">FAMILIAR</span>
+                        </div>
+                        <div class="room-content">
+                            <div class="room-meta">3–5 HUÉSPEDES · AMPLITUD</div>
+                            <h3>Habitación Familiar</h3>
+                            <p>Un espacio pensado para descansar y disfrutar juntos.</p>
+                            <ul>
+                                <li>✓ Camas confortables</li>
+                                <li>✓ Baño privado</li>
+                                <li>✓ Espacio amplio</li>
+                            </ul>
+                            <div class="room-bottom">
+                                <div><small>Desde</small><strong>$1,700 <small>MXN/noche</small></strong></div>
+                                <a href="#reservaciones" class="room-link"
+                                   data-room="familiar">Elegir ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="price-disclaimer">
+                    * Precios ilustrativos para el proyecto. No representan
+                    tarifas confirmadas ni disponibilidad real.
+                </p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA DESTACADA -->
+        <section class="experience">
+            <div class="experience-image"></div>
+            <div class="experience-content">
+                <span class="eyebrow">HAZ UNA PAUSA</span>
+                <h2>Tu única tarea es <em>disfrutar.</em></h2>
+                <p>
+                    Regálate una mañana tranquila, una tarde junto a la
+                    alberca y noches llenas de descanso.
+                </p>
+                <a href="#reservaciones" class="btn btn-gold">
+                    Quiero vivirlo ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="services section-padding" id="servicios">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow dark-eyebrow">TODO PARA TI</span>
+                    <h2>Pequeños detalles, <em>grandes momentos.</em></h2>
+                    <p>Disfruta las comodidades que hacen especial tu estancia.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span>🏊</span><h3>Alberca</h3>
+                        <p>Un espacio para refrescarte y relajarte.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🍽️</span><h3>Restaurante</h3>
+                        <p>Una experiencia gastronómica para disfrutar.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>📶</span><h3>Wi-Fi</h3>
+                        <p>Mantente conectado durante tu estancia.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🌴</span><h3>Jardines</h3>
+                        <p>Áreas verdes para pasear y descansar.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🛎️</span><h3>Recepción</h3>
+                        <p>Atención amable para ayudarte cuando lo necesites.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🚗</span><h3>Estacionamiento</h3>
+                        <p>Comodidad para quienes llegan en automóvil.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🧹</span><h3>Limpieza</h3>
+                        <p>Espacios cuidados para una estancia agradable.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>🎉</span><h3>Eventos</h3>
+                        <p>Espacios para celebrar momentos especiales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL -->
+        <section class="team section-padding" id="personal">
+            <div class="container">
+                <div class="team-heading">
+                    <div>
+                        <span class="eyebrow">LA CALIDEZ NOS DISTINGUE</span>
+                        <h2>Personas que hacen <em>la diferencia.</em></h2>
+                        <p>Conoce al equipo que da vida a la experiencia Brisa Dorada.</p>
+                    </div>
+                    <div class="team-controls">
+                        <button type="button" id="btn-prev" aria-label="Personal anterior">←</button>
+                        <button type="button" id="btn-next" aria-label="Siguiente personal">→</button>
+                    </div>
+                </div>
+
+                <div class="team-track" id="teachers-track">
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Gerente del hotel">
+                        <div><span>DIRECCIÓN</span><h3>Roberto Hernández</h3><p>Gerente general</p></div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Recepcionista del hotel">
+                        <div><span>RECEPCIÓN</span><h3>Mariana Torres</h3><p>Atención al huésped</p></div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=500&q=80" alt="Chef del hotel">
+                        <div><span>GASTRONOMÍA</span><h3>Carlos Mendoza</h3><p>Chef del restaurante</p></div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=80" alt="Supervisora de limpieza">
+                        <div><span>HOSPITALIDAD</span><h3>Lucía Ramírez</h3><p>Supervisión de limpieza</p></div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="Encargado de mantenimiento">
+                        <div><span>INSTALACIONES</span><h3>Daniel Flores</h3><p>Mantenimiento</p></div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=80" alt="Coordinadora de eventos">
+                        <div><span>EXPERIENCIAS</span><h3>Andrea Castillo</h3><p>Coordinación de eventos</p></div>
+                    </article>
+                </div>
+                <p class="team-hint">Usa las flechas para conocer a nuestro equipo →</p>
+            </div>
+        </section>
+
+        <!-- RESERVACIONES -->
+        <section class="booking section-padding" id="reservaciones">
+            <div class="container booking-grid">
+                <div class="booking-info">
+                    <span class="eyebrow">TU PRÓXIMA ESCAPADA</span>
+                    <h2>Todo comienza con <em>una reservación.</em></h2>
+                    <p>
+                        Cuéntanos cómo imaginas tu estancia. Completa tus datos
+                        para consultar un presupuesto estimado.
+                    </p>
+                    <div class="booking-perk"><span>01</span><div><strong>Elige tus fechas</strong><p>Selecciona llegada y salida.</p></div></div>
+                    <div class="booking-perk"><span>02</span><div><strong>Personaliza tu viaje</strong><p>Indica huéspedes y habitación.</p></div></div>
+                    <div class="booking-perk"><span>03</span><div><strong>Revisa tu presupuesto</strong><p>Consulta el cálculo orientativo.</p></div></div>
+                    <div class="booking-contact">
+                        <span>¿Tienes preguntas?</span>
+                        <a href="tel:7771234567">☎ 777 123 4567</a>
+                    </div>
+                </div>
+
+                <div class="booking-form-card">
+                    <div class="form-heading">
+                        <span>✦ BRISA DORADA</span>
+                        <h3>Planea tu estancia</h3>
+                        <p>Completa los datos de tu viaje.</p>
+                    </div>
+
+                    <form id="form-hero-informes">
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="info_nombre">Nombre *</label>
+                                <input type="text" id="info_nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required>
+                            </div>
+                            <div class="field">
+                                <label for="info_apellido">Apellido *</label>
+                                <input type="text" id="info_apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="info_email">Correo electrónico *</label>
+                            <input type="email" id="info_email" name="email" placeholder="nombre@correo.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="info_telefono">Teléfono (10 dígitos) *</label>
+                            <input type="tel" id="info_telefono" name="telefono" placeholder="7771234567" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" autocomplete="tel" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="info_fecha">Fecha de llegada *</label>
+                                <input type="date" id="info_fecha" name="fecha_llegada" required>
+                            </div>
+                            <div class="field">
+                                <label for="info_salida">Fecha de salida *</label>
+                                <input type="date" id="info_salida" name="fecha_salida" required>
+                            </div>
+                        </div>
+
+                        <div class="stay-summary" id="noches-info" aria-live="polite">
+                            🌙 Selecciona las fechas de tu estancia.
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="info_personas">Huéspedes *</label>
+                                <select id="info_personas" name="personas" required>
+                                    <option value="1">1 huésped</option>
+                                    <option value="2" selected>2 huéspedes</option>
+                                    <option value="3">3 huéspedes</option>
+                                    <option value="4">4 huéspedes</option>
+                                    <option value="5">5 huéspedes</option>
+                                    <option value="6">6 huéspedes</option>
+                                    <option value="7">7 huéspedes</option>
+                                    <option value="8">8 huéspedes</option>
+                                    <option value="9">9 huéspedes</option>
+                                    <option value="10">10 huéspedes</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="info_habitaciones">Habitaciones</label>
+                                <select id="info_habitaciones" name="numero_habitaciones">
+                                    <option value="1">1 habitación</option>
+                                    <option value="2">2 habitaciones</option>
+                                    <option value="3">3 habitaciones</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="info_nivel">Tipo de viaje *</label>
+                            <select id="info_nivel" name="tipo_huesped" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="individual">Individual</option>
+                                <option value="pareja">En pareja</option>
+                                <option value="familia">Familiar</option>
+                                <option value="amigos">Con amigos</option>
+                                <option value="negocios">De negocios</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="info_carrera">Tipo de habitación *</label>
+                            <select id="info_carrera" name="habitacion" required>
+                                <option value="" disabled selected>Elige una habitación</option>
+                                <option value="estandar">Habitación Estándar</option>
+                                <option value="doble">Habitación Doble</option>
+                                <option value="suite">Suite de Lujo</option>
+                                <option value="familiar">Habitación Familiar</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="info_comentarios">Solicitudes especiales</label>
+                            <textarea id="info_comentarios" name="comentarios" rows="3" maxlength="500" placeholder="Cuéntanos si necesitas algo especial..."></textarea>
+                        </div>
+
+                        <div class="price-estimate">
+                            <span>Presupuesto estimado</span>
+                            <strong id="precio-total">$0 MXN</strong>
+                            <small id="precio-detalle">Selecciona habitación y fechas.</small>
+                        </div>
+
+                        <label class="consent">
+                            <input type="checkbox" id="info_acepto" required>
+                            <span>Confirmo que mis datos son correctos y entiendo que esta es una solicitud, no una reserva confirmada.</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-gold btn-submit">
+                            Revisar solicitud ↗
+                        </button>
+
+                        <div id="resumen-reserva" class="reservation-result" hidden aria-live="polite"></div>
+                        <p class="form-footnote">Los precios son ilustrativos. La disponibilidad y la tarifa final deben confirmarse directamente con el hotel.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIONES DEMOSTRATIVAS -->
+        <section class="reviews section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow dark-eyebrow">MOMENTOS QUE INSPIRAN</span>
+                    <h2>Una estancia para <em>recordar.</em></h2>
+                    <p>Ejemplos de opiniones para el diseño de la página.</p>
+                </div>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Un lugar acogedor, ideal para desconectar y disfrutar de unos días de descanso.”</p>
+                        <strong>— Opinión de ejemplo</strong>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Las habitaciones y los espacios transmiten tranquilidad. Una experiencia que invita a volver.”</p>
+                        <strong>— Opinión de ejemplo</strong>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Una propuesta de hotel perfecta para viajes en pareja o vacaciones en familia.”</p>
+                        <strong>— Opinión de ejemplo</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand footer-logo" href="#inicio">
+                    <span class="brand-icon">✦</span>
+                    <span>BRISA <strong>DORADA</strong><small>HOTEL & EXPERIENCIAS</small></span>
+                </a>
+                <p>Descanso, hospitalidad y momentos que se convierten en recuerdos.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Explora</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#personal">Nuestro equipo</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <a href="tel:7771234567">777 123 4567</a>
+                <a href="#reservaciones">Solicitar reservación</a>
+                <span>Atención al huésped</span>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <span>© 2026 Hotel Brisa Dorada · Proyecto educativo</span>
+                <a href="#inicio">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
