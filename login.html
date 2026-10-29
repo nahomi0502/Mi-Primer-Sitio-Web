@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Huéspedes - Hotel Brisa Dorada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cbtis-login-body">
+
+    <!-- Contenedor principal de dos columnas -->
+    <div class="cbtis-login-container">
+
+        <!-- LADO IZQUIERDO: Panel con Bienvenida e Ilustración -->
+        <div class="cbtis-left-panel">
+            <div class="cbtis-left-content">
+                
+                <div class="cbtis-illustration-box">
+                    <div class="cbtis-badge-icon">👑🏖️</div>
+                    <h2>¡BIENVENID@!</h2>
+                </div>
+
+                <div class="cbtis-notices-box">
+                    <h3>¡Avisos de Estancia!</h3>
+                    <p>Consulta el estado de tu reservación, solicita room service, agenda servicios de spa y revisa tus beneficios exclusivos de huésped VIP en el Hotel Brisa Dorada.</p>
+                </div>
+
+                <div class="cbtis-slider-dots">
+                    <span class="cbtis-dot active"></span>
+                    <span class="cbtis-dot"></span>
+                    <span class="cbtis-dot"></span>
+                </div>
+            </div>
+
+            <div class="cbtis-left-footer">
+                Hotel Brisa Dorada &copy; 2026<br>
+                <span>Aviso de privacidad | Términos y condiciones</span>
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Panel con el Formulario de Acceso -->
+        <div class="cbtis-right-panel">
+            <div class="cbtis-login-wrapper">
+                
+                <div class="login-back-container">
+                    <a href="index.html" class="cbtis-back-link">← Regresar al inicio</a>
+                </div>
+
+                <div class="cbtis-logo-header">
+                    <h1>Hotel <strong>Brisa Dorada</strong></h1>
+                </div>
+
+                <form id="form-login" action="#" method="POST">
+                    
+                    <!-- NUEVA FUNCIÓN: Selector del tipo de usuario -->
+                    <div class="cbtis-input-group">
+                        <label for="tipo_usuario">Tipo de Usuario</label>
+                        <select id="tipo_usuario" name="tipo_usuario" class="form-control-select" style="width: 100%; border: none; border-bottom: 1px solid rgba(212, 175, 55, 0.4); background: transparent; color: inherit; padding: 8px 0; outline: none;" required>
+                            <option value="huesped" selected style="background: #141414; color: #fff;">Huésped Registrado</option>
+                            <option value="socio" style="background: #141414; color: #fff;">Socio Club VIP Gold</option>
+                            <option value="personal" style="background: #141414; color: #fff;">Personal / Recepción</option>
+                        </select>
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="usuario">Correo Electrónico o Usuario</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <!-- NUEVA FUNCIÓN: Número de Folio de Reservación -->
+                    <div class="cbtis-input-group">
+                        <label for="folio_reservacion">Número de Reservación (Opcional)</label>
+                        <input type="text" id="folio_reservacion" name="folio_reservacion" placeholder="Ej. BD-2026-889">
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="cbtis-btn-ingresar">INGRESAR AL PORTAL</button>
+
+                </form>
+
+                <div class="cbtis-login-help">
+                    <a href="#">Soporte y Recepción 24/7</a> | <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
